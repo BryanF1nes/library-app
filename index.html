@@ -20,31 +20,24 @@
         </nav>
 
         <div class="modal grid" style="display: none">
-            <label for="">Title</label>
-            <input type="text">
-            <label for="">Author</label>
-            <input type="text">
-            <label for="">Pages</label>
-            <input type="number">
-            <div class="checkbox-container">
-                <label for="">Read</label>
-                <input class="checkbox" type="checkbox">
+            <div class="xBtn">
+                <i class="fa-solid fa-xmark fa-lg"></i>
             </div>
-            <button>Submit</button>
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title" required>
+            <label for="author" required>Author</label>
+            <input type="text" id="author" name="author">
+            <label for="pages" required>Pages</label>
+            <input type="number" id="pages" name="pages">
+            <div class="checkbox-container">
+                <label for="read" name="read">Read</label>
+                <input class="checkbox" id="checkbox" type="checkbox">
+            </div>
+            <button type="submit" id="submit">Submit</button>
         </div>
 
 
-        <main>
-            <div class="book-container">
-                <div class="title">Title - The Hobbit</div>
-                <div class="author">Author - J.R.R. Tolkein</div>
-                <div class="pages">Pages - 295</div>
-                <div class="btnContainer">
-                    <button class="read">Read</button>
-                    <button class="delete">Delete</button>
-                </div>
-            </div>
-        </main>
+        <main></main>
 
         <footer>
             <a href="https://github.com/BryanF1nes" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
