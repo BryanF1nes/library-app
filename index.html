@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="grid-container">
+        <nav class="main-nav">
+            <h1>The Library</h1>
+            <p> Feel free to add a book <i class="fa-solid fa-arrow-right fa-md"></i></p>
+            <div class="addButton"><i class="fa-solid fa-plus fa-lg"></i></div>
+        </nav>
+
+        <div class="modal grid" style="display: none">
+            <label for="">Title</label>
+            <input type="text">
+            <label for="">Author</label>
+            <input type="text">
+            <label for="">Pages</label>
+            <input type="number">
+            <div class="checkbox-container">
+                <label for="">Read</label>
+                <input class="checkbox" type="checkbox">
+            </div>
+            <button>Submit</button>
+        </div>
+
+
+        <main>
+            <div class="book-container">
+                <div class="title">Title - The Hobbit</div>
+                <div class="author">Author - J.R.R. Tolkein</div>
+                <div class="pages">Pages - 295</div>
+                <div class="btnContainer">
+                    <button class="read">Read</button>
+                    <button class="delete">Delete</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <a href="https://github.com/BryanF1nes" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
+            <a href="https://github.com/BryanF1nes" target="_blank"><p>BryanF1nes</p></a>
+        </footer>
+    </div>
+    <script src="app.js"></script>   
+</body>
+</html>
