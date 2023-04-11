@@ -39,6 +39,7 @@ function Book(title, author, pages, read) {
 function addBook() {
     const book = new Book(title.value, author.value, pages.value, read.checked);
     myLibrary.push(book);
+
     displayLastBook();
 }
 
@@ -46,20 +47,26 @@ function displayLastBook() {
     const lastItem = myLibrary[myLibrary.length -1];
     const main = document.querySelector('main');
     const div = document.createElement('div');
+    let read = '';
 
     if (lastItem.read == true) {
         lastItem.read = 'Read';
+        read = 'green'
     } else {
         lastItem.read = 'Not Read';
+        read = 'red';
     }
 
+    // if lastItem.read == true => background color set as 'green'
+    // if lastItem.read == false => background color set as 'red'
+    
     div.classList.add('book-container');
     div.innerHTML = `
     <div class="title">Title - ${lastItem.title}</div>
         <div class="author">Author - ${lastItem.author}</div>
         <div class="pages">Pages - ${lastItem.pages}</div>
         <div class="btnContainer">
-            <button class="read">${lastItem.read}</button>
+            <button class="read ${read}">${lastItem.read}</button>
             <button class="delete">Delete</button>
         </div>
     `;
